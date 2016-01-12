@@ -9,4 +9,11 @@
     <dimen name="League">15sp</dimen>
     <dimen name="widget_score_default_width">250dp</dimen>
     <dimen name="widget_score_default_height">110dp</dimen>
+    <dimen name="widget_all_scores_default_width">250dp</dimen>
+    <dimen name="widget_all_scores_default_height">180dp</dimen>
+    <dimen name="widget_all_scores_min_resize_width">220dp</dimen>
+    <dimen name="widget_all_scores_min_resize_height">@dimen/widget_all_scores_default_height</dimen>
+
+    <dimen name="scores_widget_text_size">24dp</dimen>
+    <dimen name="scores_widget_text_width">38dp</dimen>
 </resources>

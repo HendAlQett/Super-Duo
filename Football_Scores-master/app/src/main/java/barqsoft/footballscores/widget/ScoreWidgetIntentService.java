@@ -34,11 +34,7 @@ public class ScoreWidgetIntentService extends IntentService {
     public static final int COL_MATCHTIME = 2;
 
     private String[] selectionArguments = new String[1];
-//    private static final String[] SCORES_COLUMNS={
-//
-//    };
-//
-//    private static final int INDEX
+
 
     public ScoreWidgetIntentService() {
         super("ScoreWidgetIntentService");
@@ -78,13 +74,13 @@ public class ScoreWidgetIntentService extends IntentService {
 
         for (int appWidgetId: appWidgetIds)
         {
-            int layoutId = R.layout.widget_score_small;
+            int layoutId = R.layout.widget_score_large;
             RemoteViews views = new RemoteViews(this.getPackageName(),layoutId);
             views.setTextViewText(R.id.home_name,homeName);
             views.setTextViewText(R.id.away_name,awayName);
             views.setTextViewText(R.id.score_textview,scores);
             views.setTextViewText(R.id.data_textview,time);
-            views.setImageViewResource(R.id.home_crest,homeImage);
+            views.setImageViewResource(R.id.home_crest, homeImage);
             views.setImageViewResource(R.id.away_crest,awayImage);
 
             Intent launchIntent = new Intent(this, MainActivity.class);
